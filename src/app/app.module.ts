@@ -3,15 +3,23 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import {LayoutModule} from './layout/layout.module';
+import { ProfileGalleryComponent } from './profile-gallery/profile-gallery.component';
+import { HttpClientModule } from '@angular/common/http';
+import { NameFilterPipePipe } from './pipes/name-filter/name-filter-pipe.pipe';
+import {FormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ProfileGalleryComponent,
+    NameFilterPipePipe
   ],
-    imports: [
-        BrowserModule,
-        LayoutModule
-    ],
+  imports: [
+    BrowserModule,
+    LayoutModule,
+    HttpClientModule,
+    FormsModule
+  ],
   providers: [],
   bootstrap: [AppComponent]
 })

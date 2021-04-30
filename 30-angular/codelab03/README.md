@@ -109,7 +109,8 @@ the final parts. In the lowest level ``<div>``, we need to provide some changes 
   Can't get it done? Remember to **timebox** your search (not longer than 1 hour) for the solution and ask for help if needed! 
     - For the images, you can just link to heroku. ```[src]="'https://pettinder.herokuapp.com/'+ pet.image"``` should do the trick.
     - Want to show the name of each pet? Remember interpolation, we talked about it in the second codelab.
-
+  - Our app is using routing. Right now, we're not actively using this yet (the exercise on this comes in codelab06), but we need it to show our ``profileGallery`` component. For now, just copy/paste ``{path: '', component: ProfileGalleryComponent}`` into ``app-routing.module.ts``. You will see a constant called ``Routes``
+  in there. This contains an array of routes for your application. It might be empty for now, but you can add this one there. It will make sure your gallery is loaded in between the ```<router-outlet>``` tag in your code.
     
   > Some extra info: NgFor is used to present a list of items. The Angular doc tells us it is used for:  
   > 1. Define a block of HTML that determines how Angular renders a single item.  

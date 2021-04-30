@@ -49,9 +49,9 @@ Can you spot the errors? It includes some things we did in the previous codelab.
 in our ``header.component.ts``. ``{{year}}`` needs to be in ``footer.component.ts``. While the header is just a title, we want the year to update automatically when we have entered a new one. We'll first guide you through adding the title. 
   * In the previous codelab, we just
   added the title variable and gave it a value. We can do this in a more encapsulated manner. Start by declaring the title as a string. Just like in Java, you can do this at the top of your class. The syntax is slightly different: 
-    >private title: string;
+    >private _title: string;
   * Because we are using encapsulation here, we will find more similarities with Java. In order to **get** our title, we need a constructor. The syntax for this is: 
-    >constructor() {<br> this.title = 'Petinder'<br> }
+    >constructor() {<br> this._title = 'Petinder'<br> }
   * This leaves us with just a getter to be made. For this, the syntax is:
     > get title(): string {<br>
     return this._title;<br>

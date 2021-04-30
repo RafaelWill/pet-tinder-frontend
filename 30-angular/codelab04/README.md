@@ -46,7 +46,7 @@ First of all, we want to invoke our selectPet() function when someone clicks one
 ``selectPet()``. This can be added as a statement to the div where we also loop over our pets. The syntax for this is ``(event) = "functionToPerform()"``.
 
 - Last step to make this first requirement work is adding a new section which shows us what we actually want to see. Binding a click event is not enough in this case, we need to specify what we want to put where on our screen as well. 
-Start by adding the following code to your ``profile.gallery.component.ts`` file.
+Start by adding the following code to your ``profile.gallery.component.ts`` file. You can copy it from the html file in this folder.
   ```
   <div class="col-md-3">
     <div class="gallery-detail">
@@ -80,7 +80,7 @@ You can find more information about this here: https://angular.io/api/core/Pipe.
 
 
 - Now that we made a pipe that will filter names, all that's left to do is call this pipe when necessary.
-- Add the following code to ``profile-gallery.component.html``:
+- Change the following code in ``profile-gallery.component.html``. The code is available in the html file in this folder:
   ```
   <section class="tiny-dialog">
     <h3>Find your pet</h3>

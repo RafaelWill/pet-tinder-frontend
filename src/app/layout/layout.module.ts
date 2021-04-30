@@ -6,9 +6,6 @@ import { LayoutComponent } from './layout.component';
 import {RouterModule} from '@angular/router';
 import {AppRoutingModule} from './app.routing.module';
 
-
-
-
 @NgModule({
   declarations: [
     HeaderComponent,
