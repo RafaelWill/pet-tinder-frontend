@@ -9,13 +9,15 @@ import { NameFilterPipePipe } from './pipes/name-filter/name-filter-pipe.pipe';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { SetupDateComponent } from './setup-date/setup-date.component';
 import {RouterModule} from '@angular/router';
+import { PopularityFilterPipe } from './pipes/popularity-filter/popularity-filter.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     ProfileGalleryComponent,
     NameFilterPipePipe,
-    SetupDateComponent
+    SetupDateComponent,
+    PopularityFilterPipe
   ],
   imports: [
     BrowserModule,
