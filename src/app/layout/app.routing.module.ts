@@ -4,7 +4,7 @@ import {ProfileGalleryComponent} from '../profile-gallery/profile-gallery.compon
 import {SetupDateComponent} from '../setup-date/setup-date.component';
 
 const routes: Routes = [{path: '', component: ProfileGalleryComponent},
-                        {path: 'setup-date', component: SetupDateComponent}
+                        {path: 'setup-date/:id', component: SetupDateComponent}
                         ];
 
 @NgModule({
